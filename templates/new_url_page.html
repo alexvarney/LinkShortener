@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>{{ app_url }} Link Shortener</title>
+</head>
+<body>
+    <h1 id="app_url_title">{{ app_url }} Link Shortener</h1>
+    <div class="center_parent_block">
+        <div class="center_child_block">
+            <h3 class="response_text">Your shortened URL is:</h3>
+            <p class="response_text short_url"><a href="http://{{ app_url + "/" + short_code}}">{{ app_url + "/" + short_code}}</a></p>
+            <p class="deletion_message">To delete the link, visit <a href="http://{{ app_url + "/" + short_code + "/delete/" }}">{{ app_url + "/" + short_code + "/delete/" }}</a> and enter the code: <span class="deletion_code">{{ deletion_code }}</span></p>
+        </div>
+    </div>
+
+    <form class="submission_form" action="." method="POST">
+        <div class="center_parent_block">
+            <div class="center_child_block">
+                <input id="url_input" type="text" name="url_submit_field" placeholder="Shorten another one..." onfocus="ClearInputBox(this)">
+                <input id="submit_button" type="submit" value="Shorten!">
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

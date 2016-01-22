@@ -1,0 +1,84 @@
+#app_url_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top: 175px;
+    color: #19667D;
+}
+
+#url_input {
+    display:inline-block;
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #CCCCCC;
+    float:left;
+}
+#url_input:focus {
+    outline: none;
+}
+
+#submit_button {
+    width: 150px;
+    height: 43px;
+    margin-left:10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #19667D;
+    border: none;
+    border-radius: 2.5px;
+}
+
+#submit_button:hover
+{
+    color: #19667D;
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+.submission_form {
+    position: relative;
+    top:100px;
+}
+
+.center_parent_block {
+    text-align: center;
+    position:relative;
+    top:300px;
+}
+
+.center_child_block {
+    display: inline-block;
+}
+
+.response_text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.deletion_message{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.deletion_code{
+    color: #19667D;
+}
+
+a{
+    text-decoration: none;
+    color: #19667D;
+}
